@@ -7,6 +7,7 @@ import Texto from './Texto'
 export default function EjGestos() {
   const [label, setLabel] = useState(null);
 
+  const [bgColor, setBgColor] = useState('pink');
   
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
@@ -61,7 +62,9 @@ export default function EjGestos() {
         console.log("scrolling up");
       
         window.scrollBy(0, -window.innerHeight);
-      } 
+      } else if (label === "point") {
+        setBgColor("lightblue");
+      }
       else 
       {
         console.log("detecting...");
@@ -75,7 +78,7 @@ export default function EjGestos() {
         <div style = {{
           alignItems: 'center',
           display: 'flex',
-          backgroundColor: 'pink',
+          backgroundColor: bgColor,
           flexDirection: 'column',
           }}>
             <div>
