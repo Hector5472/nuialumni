@@ -1,6 +1,7 @@
 //Ejemplo de un cubo en RA
 import { Canvas} from "@react-three/fiber";
 import XrCube from './XrCube';
+import XrOctahedron from './XrOctahedron';
 import { ARButton, XR } from "@react-three/xr";
 
 
@@ -12,7 +13,7 @@ function EjAR(){
             <ARButton/>
             <Canvas>
                 <XR>
-                    <XrCube />
+                    <XrOctahedron />
                    
                 </XR>
             </Canvas>
