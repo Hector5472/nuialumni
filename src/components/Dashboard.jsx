@@ -29,6 +29,10 @@ function Dashboard() {
                             <Link to={'/ar'} style={{textDecoration:'none', color:'white'}}>AR</Link>
                         </Grid>
 
+                        <Grid size={{xs:12, md:1, lg:1}}>        
+                            <Link to={'/arhectorF'} style={{textDecoration:'none', color:'white'}}>AR Hector</Link>
+                        </Grid>
+
                         
                     </Grid>
                 </Toolbar >
